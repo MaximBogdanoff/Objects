@@ -26,5 +26,20 @@ public class Book {
         this.bookAge = bookAge;
     }
 
+    public String toString() {
+        return String.valueOf(this.bookAge);
+    }
 
+
+    public boolean equals(Book other) {
+        if (this.bookName != other.bookName) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    public int hashCode() {
+        return java.util.Objects.hash(bookName);
+    }
 }

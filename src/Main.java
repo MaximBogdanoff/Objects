@@ -7,6 +7,9 @@ public class Main {
         Book two = new Book("Робинзон Крузо", bookTwo, 1719);
         System.out.println("Название книги " + one.getBookName() + ". Автор " + one.getAuthor() + " , год выхода " + one.getBookAge());
         System.out.println("Название книги " + two.getBookName() + ". Автор " + two.getAuthor() + " , год выхода " + two.getBookAge());
+        System.out.println(one.equals(two));
+        System.out.println(bookOne.equals(bookTwo));
+
     }
 }
 

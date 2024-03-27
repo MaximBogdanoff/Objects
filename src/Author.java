@@ -20,4 +20,21 @@ public class Author {
         return this.firstName + " " + this.lastName;
     }
 
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+    public boolean equals(Author other) {
+        if (this.firstName!=other.firstName) {
+            return false;
+        }
+        else {return true;}
+    }
+    public int hashCode() {
+        return java.util.Objects.hash(firstName);
+    }
+
 }
