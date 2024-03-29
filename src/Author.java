@@ -22,13 +22,6 @@ public class Author {
         return this.firstName + " " + this.lastName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o==null||getClass()!=o.getClass()) return false;
